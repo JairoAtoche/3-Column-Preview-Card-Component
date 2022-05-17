@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary color */
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    /* Neutral color */
+    --transparent-white: hsla(0, 0%, 100%, 0.75);/* paragraphs */
+    --very-light-gray: hsl(0, 0%, 95%); /* background, headings, buttons */
+}
+
+.body {
+    background-color: var(--very-light-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    margin-top: 5.6rem;
+    margin-left: 1.7rem;
+    margin-right: 1.7rem;
+    min-width: 320px;
+    height: 1310px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+}
+
+.main__sedans-container, .main__suvs-container, .main__luxury-container {
+    background-color: var(--bright-orange);
+    min-height: 33.3%;
+    padding-left: 2.6rem;
+    padding-right: 2.6rem;
+    padding-top: 2.5rem;
+    color: var(--very-light-gray);
+}
+.main__suvs-container {
+    background-color: var(--dark-cyan);
+}
+.main__luxury-container {
+    background-color: var(--very-dark-cyan);
+}
+.sedans__h2, .suvs__h2, .luxury__h2 {
+    margin-top: 2.4rem;
+    margin-bottom: 1.6rem;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 40px;
+}
+.sedans__p, .suvs__p, .luxury__p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    line-height: 1.5rem;
+    color: var(--transparent-white);
+}
+
+.sedans__button, .suvs__button, .luxury__button {
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    color: var(--very-light-gray);
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Lexend Deca', sans-serif;
+    margin-top: 25px;
+}
+.sedans__button {
+    color: var(--bright-orange);
+}
+.suvs__button {
+    color: var(--dark-cyan);
+}
+.luxury__button {
+    color: var(--very-dark-cyan);
+}
+.sedans__button:hover, .suvs__button:hover, .luxury__button:hover {
+    color: var(--transparent-white);
+    border: 1px solid var(--transparent-white);
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+.sedans__button:hover {
+    background-color: var(--bright-orange);
+}
+.suvs__button:hover {
+    background-color: var(--dark-cyan);
+}
+.luxury__button:hover {
+    background-color: var(--very-dark-cyan);
+}
+.footer {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.footer__attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.footer__a { 
+    color: hsl(228, 45%, 44%); 
+}
+@media screen and (min-width: 1024px) {
+    .main {
+        flex-direction: row;
+        margin-left: 16.25rem;
+        margin-right: 16.25rem;
+        margin-top: 5rem;
+        height: 520px;
+        width: 940px;
+    }
+    .suvs__p, .luxury__p, .sedans__p {
+        margin-top: 2rem;
+        margin-right: 1.25rem;
+    }
+    .sedans__button, .suvs__button, .luxury__button {
+        margin-top: 6.25rem;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .main {
+        flex-direction: row;
+        margin-left: 16.25rem;
+        margin-right: 16.25rem;
+        margin-top: 10rem;
+        height: 520px;
+        width: 940px;
+    }
+    .suvs__p, .luxury__p, .sedans__p {
+        margin-top: 2rem;
+        margin-right: 1.25rem;
+    }
+    .sedans__button, .suvs__button, .luxury__button {
+        margin-top: 6.25rem;
+    }
+}
