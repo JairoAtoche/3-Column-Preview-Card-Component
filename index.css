@@ -34,6 +34,8 @@
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .main__sedans-container, .main__suvs-container, .main__luxury-container {
@@ -43,6 +45,7 @@
     padding-right: 2.6rem;
     padding-top: 2.5rem;
     color: var(--very-light-gray);
+    max-width: 320px;
 }
 .main__suvs-container {
     background-color: var(--dark-cyan);
@@ -68,6 +71,7 @@
     height: 50px;
     border: none;
     border-radius: 50px;
+    border: 1px solid var(--transparent-white);
     color: var(--very-light-gray);
     font-size: 15px;
     font-weight: 400;
